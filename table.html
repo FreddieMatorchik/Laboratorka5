@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<title>Таблица</title>
+
+	<link rel="stylesheet" href="table.css " />
+	<link rel="stylesheet" href="styleMain.css" />
+
+	<script type="text/javascript">
+		function addRow() {
+			var id = document.getElementById('num').value
+			var fio = document.getElementById('title').value
+			var nKnig = document.getElementById('genre').value
+			var nGroop = document.getElementById('Year').value
+
+			if (!document.getElementsByTagName) return
+			tabBody = document.getElementsByTagName('table').item(0)
+			row = document.createElement('tr')
+			cell1 = document.createElement('td')
+			cell2 = document.createElement('td')
+			cell3 = document.createElement('td')
+			cell4 = document.createElement('td')
+
+			textnode1 = document.createTextNode(id)
+			textnode2 = document.createTextNode(fio)
+			textnode3 = document.createTextNode(nKnig)
+			textnode4 = document.createTextNode(nGroop)
+
+			cell1.appendChild(textnode1)
+			cell2.appendChild(textnode2)
+			cell3.appendChild(textnode3)
+			cell4.appendChild(textnode4)
+
+			row.appendChild(cell1)
+			row.appendChild(cell2)
+			row.appendChild(cell3)
+			row.appendChild(cell4)
+
+			tabBody.appendChild(row)
+		}
+	</script>
+</head>
+<body>
+	<div class="header">
+		<div class="item linksPage">
+			<a href="MainLab.html">Основная страница</a>
+		</div>
+		<div class="item linksPage">
+			<a
+				href="D:\VS Code\VS Code [Файлы и Программы]\Laboratorka5 CK\ThirdLab.html"
+				>Позиционирование элементов</a
+			>
+		</div>
+		<div class="item linksPage">
+			<a
+				href="D:\VS Code\VS Code [Файлы и Программы]\Laboratorka5 CK\table.html"
+				>Таблица</a
+			>
+		</div>
+	</div>
+	<div class="container_box">
+		<div class="container_table">
+			<table class="table">
+				<caption>
+					Произведения Достоевского
+				</caption>
+				<tr>
+					<th colspan="2" style="width: 400px">Название и порядковый номер</th>
+					<th>Жанр</th>
+					<th>Год издания</th>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>Белые ночи</td>
+					<td>Повесть</td>
+					<td>1848</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>Преступление и наказание</td>
+					<td>Роман</td>
+					<td>1866</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>Скверный анекдот</td>
+					<td>Рассказ</td>
+					<td>1862</td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>Записки из подполья</td>
+					<td>Повесть</td>
+					<td>1864</td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>Идиот</td>
+					<td>Роман</td>
+					<td>1869</td>
+				</tr>
+				<tr>
+					<td>7</td>
+					<td>Бесы</td>
+					<td>Роман</td>
+					<td>1872</td>
+				</tr>
+				<tr>
+					<td>8</td>
+					<td>Мальчик у Христа на ёлке</td>
+					<td>Рассказ</td>
+					<td>1876</td>
+				</tr>
+			</table>
+		</div>
+		<div class="container_form">
+			<form id="Form">
+				<fieldset>
+					<legend>Добавить произведение Достоевского</legend>
+					<p>
+						<label for="fname">Название:</label><br />
+						<input type="text" id="title" /><br />
+						<label for="fname">порядковый номер:</label><br />
+						<input type="text" id="num" /><br />
+						<label for="fname">Жанр:</label><br />
+						<input type="text" id="genre" /><br />
+						<label for="fname">Год издания:</label><br />
+						<input type="text" id="Year" /><br />
+					</p>
+					<input
+						type="submit"
+						value="Записать"
+						class="add-author"
+						onClick="addRow();return false;"
+					/>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+</body>

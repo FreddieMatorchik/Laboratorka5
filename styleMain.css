@@ -1,0 +1,224 @@
+ @font-face {
+   font-family: Bigplace;
+   src: url(bigplace.ttf);
+ }
+ @font-face {
+   font-family: NewYork;
+   src: url(new-york-7.ttf);
+ }
+ body{
+   background-color: rgb(170, 15, 15);
+ }
+ h1 {
+    font-size: 50px;
+    margin: 25px 0px;
+    padding: 10px; 
+ }
+ h2 {
+    padding: 10px 15px;
+ }
+ p {
+    font-size: 20px;
+    font-family: Trebuchet MS;
+    margin: 20px 50px;
+ }
+  ol,ul {
+    font-size: 18px;
+    font-family: Trebuchet MS;
+    margin: 20px 40px 30px;
+ }
+  a {
+    font-family: Calibri bold;
+ } 
+ .socialNetwork{
+    color: black;
+
+    border-left: 5px solid black;
+    
+    padding: 5px 10px;
+
+ }
+ .linksPage{
+   color: black;
+    
+   padding: 5px;
+   margin: 20px 40px 10px;
+ }
+ .content{
+   display: flex;
+   flex-direction: row;
+ }
+.content-left{
+  align-items: center;
+  background-color: white;
+  margin-right: 5px;
+  border: 5px solid black;
+  border-radius: 10px;
+}
+.content-right{
+  display:flex;
+  align-items: center;
+  background-image: url(imagFon.jpg);
+  border: 5px solid black;
+  border-radius: 10px;
+}
+ .img_dostoevsky{
+   width: 300px;
+   height: 300px;
+   margin: 10px 20px;
+   border-style: solid;
+    border-radius: 10px;
+    border-color: white;
+    border-width: 3px;
+ }
+ .headingH2{
+   background-color: black;
+   color: white; 
+   font-family: Calibri;
+   width: 500px;
+
+   border-style: solid;
+   border-left: 0px;
+   border-top-right-radius: 50px;
+   border-bottom-right-radius: 50px;
+   border-color: black;
+   border-width: 5px;
+}
+.headingH1{
+   text-align: center;
+   background-color: black;
+   color: white;
+   font-family: Bigplace;
+}
+.textMainHeader{
+  color: black;
+  font-family: NewYork;
+}
+.sticky-block{
+   position: sticky;
+   left: 0;
+   right: 0;
+   top: 0;
+   margin: 0;
+   bottom: 0;
+}
+.header{
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+
+  background-color: white;
+  border: 2px solid black;
+  margin: 10px 0px 20px;
+}
+.item{
+ background-color: white;
+ border: 3px solid black; 
+ border-radius: 30px;
+
+ text-align: center;
+ width: 150px;
+ height: 30px;
+ margin: 40px 10px 40px;
+ padding: 10px 10px;
+}
+.container{
+background-color: white;
+border: 5px solid black;
+border-radius: 5px;
+}
+.block{
+  width: 200px;
+  height: 200px;
+  background-color: rgb(100, 25, 99);
+  border: 5px solid black;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.imag_block{
+  display: block;
+  width: 200px;
+  height: 200px;
+  border: 5px solid black;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container-2{
+display: flex;
+align-items: center;
+
+background-color: white;
+border: 5px solid black;
+border-radius: 5px;
+}
+.container-3{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-around;
+
+background-color: white;
+border: 5px solid black;
+border-radius: 5px;
+}
+.block-3{
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  background-color: rgb(100, 25, 99);
+  border: 5px solid black;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.container-4{
+  display: flex;
+  flex-direction: column;
+
+  background-color: white;
+  border: 5px solid black;
+  border-radius: 5px;
+  height: 600px;
+  }
+  .block-4{
+    background-color: rgb(100, 25, 99);
+    width: 200px;
+    height: 200px;
+    border: 5px solid black;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .relative-block-left-top{
+    background-color: red;
+    position: relative;
+    right: 105px;
+    top: 110px;
+  }
+  .relative-block-right-bottom{
+    background-color: green;
+    position: relative;
+    left: 105px;
+    bottom: 110px;
+  }
+  .block-5{
+    width: 100px;
+    height: 100px;
+    border: 5px solid black;
+    border-radius: 10px;
+  }
+  .fixed-block{
+    position: fixed;
+    background-image: url(imagFon.jpg);
+    top: 715px;
+    left: 1400px;
+  }

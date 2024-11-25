@@ -1,0 +1,52 @@
+table,th,td {
+border: 1px solid black;
+border-collapse: collapse;
+padding: 10px;
+margin: auto;
+}
+th{
+    text-align: left;
+}
+td{
+    text-align: center;
+}
+tr:nth-child(odd){
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+tr:nth-child(even){
+    background-color: rgb(223, 123, 123);
+    color: white;
+}
+tr:hover{
+    background-color: rgb(173, 173, 173);
+    color: black;
+}
+caption{
+    font-size: 25px;
+    color: white;
+    padding: 20px;
+}
+form{
+    background-color: white;
+}
+label{
+    padding:10px ;
+}
+.container_box{
+    display: flex;
+    flex-direction: row;
+}
+.container_table{
+    align-items: center;
+    background-image: url(imagFon.jpg);
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 650px;
+    height: 700px;
+    margin: auto;
+}
+.container_form{
+    align-items: center;    
+    margin: auto;
+}
